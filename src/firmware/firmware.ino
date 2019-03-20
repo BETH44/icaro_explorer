@@ -2,6 +2,7 @@
 #include "explorer_motori.h"
 #include "explorer_bumper.h"
 #include "explorer_light.h"
+#include "explorer_params.h"
 #include <Arduino.h>
 
 Motori motori = {
@@ -21,23 +22,37 @@ Bumper bumper = {
   detect_wall : 0
 };
 
-Luci luci = {
-  pin_luceA : 0,
-  pin_luceB : 0,
-  pin_luceC : 0,
-  pin_luceD : 0,
-  pin_luceE : 0,
-  lightA_value : 0,
-  lightB_value : 0,
-  lightC_value : 0,
-  lightD_value : 0,
-  lightE_value : 0,
-  soglia_A : 0,
-  soglia_B : 0,
-  soglia_C : 0,
-  soglia_D : 0,
-  soglia_E : 0,
-  detect_light : 0
+Luci luci[NUM_SENSOR_LIGHT] = {
+  {
+    pin_luce: 0,
+    light_value : 0,
+    soglia : 0,
+    detect_light : 0,
+  },
+  {
+    pin_luce: 0,
+    light_value : 0,
+    soglia : 0,
+    detect_light : 0,
+  },
+  {
+    pin_luce: 0,
+    light_value : 0,
+    soglia : 0,
+    detect_light : 0,
+  },
+  {
+    pin_luce: 0,
+    light_value : 0,
+    soglia : 0,
+    detect_light : 0,
+  },
+  {
+    pin_luce: 0,
+    light_value : 0,
+    soglia : 0,
+    detect_light : 0
+  }
 };
 
 void setup() {
