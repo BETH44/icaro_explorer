@@ -6,8 +6,8 @@
 typedef struct{
     int pin_luce;
     int light_value;
-    uint8_t soglia;
-    uint8_t detect_light;
+    int soglia;
+    int detect_light;
 }Luci;
 
 void Luci_init(Luci * l);
