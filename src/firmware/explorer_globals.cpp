@@ -10,12 +10,14 @@ Motori motori = {
   pin_pwmA : 3,
   pin_pwmB : 11, 
   pwm_A : 255,
-  pwm_B : 255
+  pwm_B : 255,
+  dir_a : 0, 
+  dir_b : 0
 };
 
 Bumper bumper = {
-  pin_bumperA : 0,
-  pin_bumperB : 0,
+  pin_bumperA : 7,
+  pin_bumperB : 8,
   BumperA_value : 0,
   BumperB_value : 0, 
   detect_wall : 0
@@ -61,8 +63,9 @@ Gas gas = {
     detect_gas : 0
 };
 
-Led led = {
-    pin_LedR : 0,
-    pin_LedV : 0,
-    pin_LedG : 0
+Suono suono = {
+  pin_suono : 0,
+  soglia_suono : 0,
+  suono_value : 0,
+  detect_sound : 0
 };

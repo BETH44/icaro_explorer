@@ -12,13 +12,13 @@ void Bumper_init(Bumper * b){
 }
 
 void Bumper_handle(Bumper * b){
-    if(b->BumperA_value == 1){
+    if(b->BumperA_value == 0){
         b->detect_wall = 1;
     }
     else {
         b->detect_wall = 0;
     }
-    if(b->BumperB_value == 1){
+    if(b->BumperB_value == 0){
         b->detect_wall = 1;
     }
     else {
@@ -33,4 +33,8 @@ int Bumper_valueA(Bumper * b){
 
 int Bumper_valueB(Bumper * b){
     return b->BumperB_value;
+}
+
+int Bumper_detectWall(Bumper * b){
+    return b->detect_wall;
 }
