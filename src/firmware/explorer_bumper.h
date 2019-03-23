@@ -5,11 +5,11 @@
 
 
 typedef struct{
-    int pin_bumperA;
-    int pin_bumperB;
-    int BumperA_value;
-    int BumperB_value;
-    int detect_wall;
+    int pin_bumperA;  //pin Bumper A
+    int pin_bumperB;  //pin Bumper B
+    int BumperA_value; //valore Bumper A
+    int BumperB_value; //valore Bumper B
+    int detect_wall;  //valore muro trovao, se restituisce il valore = 1 ha trovato un muro
 }Bumper;
 
 

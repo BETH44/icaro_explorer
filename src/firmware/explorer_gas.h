@@ -4,10 +4,10 @@
 
 
 typedef struct{
-    int pin_gas;
-    int Gas_value;
-    int Gas_soglia;
-    int detect_gas;
+    int pin_gas; //pin gas
+    int Gas_value;  //valore gas letto
+    int Gas_soglia; //soglia gas
+    int detect_gas; //valore rilevato Gas
 }Gas;
 
 void Gas_init(Gas * g);
