@@ -4,10 +4,10 @@
 #include "explorer_params.h"
 
 /**
- * Questa funzione deve PER OGNI SENSORE cominucare alla piattaforma di arduino 
- * che sono variabili di INPUT
+ * Questa funzione cominica alla piattaforma di arduino 
+ * che sono variabili di INPUT i pin_luce
  * 
- * Successivamente impostare light_value = lettura ANALOGICA del pin_luce
+ * Successivamente imposta light_value = lettura ANALOGICA del pin_luce
  */
 void Luci_init(Luci * l){
         pinMode(l->pin_luce, INPUT);
@@ -15,8 +15,8 @@ void Luci_init(Luci * l){
 }
 
 /**
- * Questa funzione deve fare i seguenti controlli:
- * Se light_value > soglia impostare detect_light = 1
+ * Questa funzione fa i seguenti controlli:
+ * Se light_value > soglia imposta detect_light = 1
  */
 void Luci_handle(Luci * l){
         if(l->light_value > l->soglia){
@@ -25,14 +25,14 @@ void Luci_handle(Luci * l){
 }
 
 /**
- * Deve restituire il valore di light_value
+ * Restituisce il valore di light_value
  */
 int Luci_value(Luci * l){
     return l->light_value;
 }
 
 /**
- * Deve restituire il valore di detect_light
+ * Restituisce il valore di detect_light
  */
 int Luci_detectLight(Luci * l){
     return l->detect_light;

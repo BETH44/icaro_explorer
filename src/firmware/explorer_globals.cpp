@@ -27,31 +27,31 @@ Luci luci[NUM_SENSOR_LIGHT] = {
   {
     pin_luce: 0,
     light_value : 0,
-    soglia : 0,
+    soglia_luce : 0,
     detect_light : 0,
   },
   {
     pin_luce: 0,
     light_value : 0,
-    soglia : 0,
+    soglia_luce : 0,
     detect_light : 0,
   },
   {
     pin_luce: 0,
     light_value : 0,
-    soglia : 0,
+    soglia_luce : 0,
     detect_light : 0,
   },
   {
     pin_luce: 0,
     light_value : 0,
-    soglia : 0,
+    soglia_luce : 0,
     detect_light : 0,
   },
   {
     pin_luce: 0,
     light_value : 0,
-    soglia : 0,
+    soglia_luce : 0,
     detect_light : 0
   }
 };

@@ -10,7 +10,6 @@
 
 
 void setup() {
-    /*
     Serial.begin(9600);
     Serial.println("Serial inizialized");
     Motori_init(&motori);
@@ -24,7 +23,7 @@ void setup() {
     Gas_init(&gas);
     Serial.println("Gas inizialized");
     Suono_init(&suono);
-    Serial.println("Suono inizialized");*/
+    Serial.println("Suono inizialized");
 }
 
 void loop() {
